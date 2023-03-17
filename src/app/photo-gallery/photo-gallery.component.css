@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bitter:ital,wght@0,300;1,400&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+.intro-text {
+    font-family: 'Lato', sans-serif;
+    font-size: xx-large;
+}
+
+.card .button {
+    border-radius: 15px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card {
+    width: 15vw;
+    height: 40vh;
+    border-radius: 1.3rem;
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: center;
+}
+
+
+
+.card:hover {
+    background-color: rgb(78, 106, 101) !important;
+}
+
+.card i {
+    display: block;
+    font: 50px;
+    text-align: center;
+    color: rgb(238, 220, 220);
+}
+
+
+.home-heading-container {
+    /* margin-top: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    padding: 4rem;
+    max-width: 100vw;
+    height: 80vh;
+    /* background-color: rgb(108, 155, 108); */
+    background-color:  rgb(209 199 185);
+    /* background-color: rgb(183 168 146); */
+    /* background-color: green; */
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.highlights {
+    width: 15vw;
+    height: 40vh;
+    /* background-color: red; */
+}
+
+.wallpaper {
+    height: 50vh;
+    width: 60vw;
+    background-color: yellow;
+    /* background-image: url("../../assets/images/collegesnap1.JPG"); */
+    /* background-repeat: no-repeat;
+    background-position: cover;
+    background-size: auto; */
+    /* background-blend-mode: multiply; */
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.news {
+    width: 15vw;
+    height: 40vh;
+    /* background-color: red; */
+}
+
+.wallpaper1 {
+    /* font-family: 'Ubuntu', sans-serif; */
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    padding: 0px;
+    max-width: 100vw;
+    height: 50vh;
+    background-color: #ede6cfe0;
+    background-image: url("../../assets/images/collegesnap1.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-blend-mode: multiply;
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.info {
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  rgb(209 199 185);
+    /* background-color: green; */
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+}
+
+.get-in-touch {
+    height: 40vh;
+    background-color: #efeded;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.btn {
+    border-radius: 2rem;
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.btn:hover {
+    border-radius: 2rem;
+    background-color: rgb(179, 197, 214);
+    color: black;
+    transition: 1s;
+}
+
+.hi {
+    font-size: 40px;
+    font-family: 'Erica One', cursive;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 900 !important;
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 900 !important;
+    margin-right: 5px;
+}
+
+.mydetails {
+    margin-top: 10px;
+}
+
+.buttons {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 10px;
+}
+
+.movetext {
+    padding-top: 1rem;
+    font-size: larger;
+    font-weight: 600;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.movetext p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: movetext 35s linear infinite;
+}
+
+@keyframes movetext {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+.text-bg-secondary {
+    background-color: #62625b !important;
+}
+
+.c-img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+
+.carousel-inner {
+    width: 70vw;
+    height: 60vh;
+    background-color: blue;
+}
+
+.carousel-container {
+    border-radius: 2rem;
+    height: 60vh;
+    box-shadow: 3px 10px 9px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    }
+
+/*
+@media (max-width:2500px) {
+
+    .carousel-inner {
+        width: 50rem !important;
+        height: 45rem !important;
+        background-color: blue;
+    }
+}
+
+@media (max-width:1800px) {
+
+    .carousel-inner {
+        width: 50rem !important;
+        height: 40rem !important;
+        background-color: blue;
+    }
+
+}
+
+@media (max-width:1700px) {
+
+    .carousel-inner {
+        width: 45rem !important;
+        height: 35rem !important;
+        background-color: blue;
+    }
+
+}
+
+@media (max-width:1300px) {
+
+    .carousel-inner {
+        width: 40rem !important;
+        height: 20rem !important;
+        background-color: blue;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    .carousel-inner {
+        width: 30rem !important;
+        height: 25rem !important;
+        background-color: blue;
+    }
+
+}
+
+
+@media (max-width:800px) {
+
+    .carousel-inner {
+        width: 30rem !important;
+        height: 25rem !important;
+        background-color: blue;
+    }
+
+}
+
+*/
+
+
+
+
+
+
+
+

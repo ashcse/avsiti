@@ -17,6 +17,13 @@ a {
     color: azure;
 }
 
+.nav-item {
+    margin-left: 1.4rem;
+}
+
+.navitems-container { 
+}
+
 .navbar{
     text-transform: uppercase;
     font-size: 14px;

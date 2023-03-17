@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/avsiti",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -23,12 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",              
+              "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",              
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js"
             ],
             "es5BrowserSupport": true
@@ -55,6 +56,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -137,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "avsiti"
+  "defaultProject": "avsiti",
+  "cli": {
+    "analytics": "662ea831-fa46-4b0c-8403-a7ed39dd88fd"
+  }
 }

@@ -6,6 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
 
+
+ .accordion {
+    width: 75vw;
+ }
+
 .intro-text {
     font-family: 'Lato', sans-serif;
     font-size: xx-large;
@@ -40,14 +45,36 @@
     color: rgb(238, 220, 220);
 }
 
+.courses-list a{
+    background-color:  rgb(209 199 185);
+    border-top: 1px solid #0091b5;
+    border-left-color: #fff;
+    border-right-color: #fff;
+  }
 
-.home-heading-container {
+  .courses-list a:hover{
+    background-color:  rgb(218, 210, 199);
+    border-top: 1px solid #0091b5;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    cursor: pointer;
+  }
+
+  .course-details {
+    width: 65vw;
+    height: 75vh;
+    background-color: aliceblue;
+    box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color:  rgb(215, 209, 201);
+  }
+
+
+.courses-container {
     /* margin-top: 1.5rem; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 4rem;
     max-width: 100vw;
     height: 80vh;

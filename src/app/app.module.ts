@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { NewsComponent } from './news/news.component';
+import { CoursesComponent } from './courses/courses.component';
+import { StaffComponent } from './staff/staff.component';
+import { AdmissionsComponent } from './admissions/admissions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { NewsComponent } from './news/news.component';
     HomeComponent,
     ContactComponent,    
     PhotoGalleryComponent,
-    NewsComponent    
+    NewsComponent,
+    CoursesComponent,
+    StaffComponent,
+    AdmissionsComponent    
   ],
   imports: [
     BrowserModule,
