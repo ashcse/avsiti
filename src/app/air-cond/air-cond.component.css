@@ -1,0 +1,19 @@
+
+  .air-cond-wallpaper{
+    /* font-family: 'Ubuntu', sans-serif; */
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    padding:0px;
+    max-width: 100vw;    
+    height: 50vh;
+    /* background-color: rgb(120, 138, 120); */
+    background-image: url("../../assets/images/aircondition.jpg");    
+    background-size: cover;
+    background-blend-mode: multiply;    
+
+}
+
+
+
+

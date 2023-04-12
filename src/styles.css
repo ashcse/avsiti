@@ -4,3 +4,54 @@ body {
     
     background-color: white !important;
 }
+
+.course-details {
+    width: 65vw;
+    /* height: 75vh; */
+    text-align: left;
+   
+    font-size: 1rem;
+    /* box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color:  rgb(215, 209, 201); */
+  }
+
+
+  @media (max-width:1100px) {
+
+    .course-details {
+        width: 65vw;
+        /* height: 75vh; */
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 0.9rem;
+        /* box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        background-color:  rgb(215, 209, 201); */
+      }
+
+      h3 {
+        font-size: 1.2rem !important;
+      }
+
+      .course-selector {
+        font-size: 0.8rem;
+        
+      }
+
+      .courses-container {
+        /* margin-top: 1.5rem; */
+        display: flex;
+        flex-direction: row;   
+        justify-content: space-between;
+        padding: 2rem;
+        max-width: 100vw;
+        
+        /* background-color: rgb(108, 155, 108); */
+        /* background-color:  rgb(209 199 185); */
+        background-color:  rgb(235, 222, 204); 
+    
+        /* background-color: rgb(183 168 146); */
+        /* background-color: green; */
+        box-shadow: 0 4px 5px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+    
+}

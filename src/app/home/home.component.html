@@ -1,7 +1,6 @@
 <div class="p-0 container-fluid d-flex flex-column justify-content-center">
   <div class="home-heading-container">
 
-
     <div>
       <h1>AVS Pvt Industrial Training Institute </h1>
     </div>
@@ -9,13 +8,21 @@
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active c-item" data-bs-interval="10000">
-            <img src="./../../assets/images/collegesnap1.JPG" class="c-img" alt="">
+            <div class="c-college-img-mobile">
+            </div>
+            <!-- <img src="./../../assets/images/collegesnap1.JPG" class="c-img" alt=""> -->
+            <!-- <img src="./../../assets/images/collegesnap1.JPG" class="c-img" alt=""> -->
           </div>
           <div class="carousel-item c-item" data-bs-interval="2000">
-            <img src="./../../assets/images/complab.JPG" class=" c-img" alt="...">
+            <div class="c-college-complab-img-mobile">
+
+            </div>
           </div>
           <div class="carousel-item c-item">
-            <img src="./../../assets/images/machinelab.JPG" class="c-img" alt="...">
+            <div class="c-college-machinelab-img-mobile">
+
+            </div>
+            <!-- <img src="./../../assets/images/machinelab.JPG" class="c-img" alt="..."> -->
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -40,43 +47,11 @@
     <!-- <button class="btn btn-secondary">Get in touch</button> -->
   </div>
 
-  <div class="info">
-    <div class="highlights">
-      <div class="card text-bg-secondary m-2">
-        <div class="card-body d-flex flex-column">
-          <i class="fa-solid fa-bars m-2"></i>
-          <h5 class="card-title">Our Success Stories</h5>
-          <p class="card-text">Following new courses are added</p>
-          <a [routerLink]="['/web-dev']" class="btn btn-primary mt-auto button">See more</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="previous-result">
-      <div class="card text-bg-secondary m-2">
-        <div class="card-body d-flex flex-column">
-          <i class="fa-solid fa-bars m-2"></i>
-          <h5 class="card-title">Last year's result</h5>
-          <p class="card-text">Following are results</p>
-          <a [routerLink]="['/web-dev']" class="btn btn-primary mt-auto button">See more</a>
-        </div>
-      </div>
-    </div>
-    <div class="news">
-      <div class="card text-bg-secondary m-2">
-        <div class="card-body d-flex flex-column">
-          <i class="fa-solid fa-bars m-2"></i>
-          <h5 class="card-title">News Flash</h5>
-          <p class="card-text">Results are out for 2022 batch CS brach </p>
-          <a [routerLink]="['/web-dev']" class="btn btn-primary mt-auto button">See more</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
+ <!-- <app-info></app-info> -->
   <div class="get-in-touch">
     <div>
       <h1>Enquire for admissions and new courses enrollement</h1>
+      <a class="btn btn-secondary" routerLink="/contact">Get in touch</a>
     </div>
     <div>
       <!-- <a class="btn btn-secondary" routerLink="/contact">Get in touch</a> -->

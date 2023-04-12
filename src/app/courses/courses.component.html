@@ -1,33 +1,37 @@
 <div class="p-0 container-fluid d-flex flex-column justify-content-center">
-    <div class="courses-container">
-      <div>
-        <h4>Courses available</h4>
-        <div class="list-group courses-list list-group-flush">
-            <a (click)="courseSelected($event)" class="list-group-item list-group-item-action list-group-item-primary">Electrician</a>
-            <a class="list-group-item list-group-item-action list-group-item-primary">Carpenter</a>
-            <a class="list-group-item list-group-item-action list-group-item-primary">Computer Programmer</a>
-            <a class="list-group-item list-group-item-action list-group-item-primary">Refrigeration</a>
-            <a class="list-group-item list-group-item-action list-group-item-primary">Air conditioner mechanic</a>
-        </div>
-      </div>
-      <div class="course-details">
-        <h3>Cource name</h3>
-
+  <div class="courses-container">
+    <div class="course-selector">
+      <h4>Courses available</h4>
+      <div class="list-group courses-list list-group-flush">
+        <a (click)="courseName='Electric'" class="list-group-item list-group-item-action list-group-item-primary" [class.active]="courseName === 'Electric'">Electrician</a>
+        <a (click)="courseName='Carpenter'" class="list-group-item list-group-item-action list-group-item-primary" [class.active]="courseName === 'Carpenter'">Carpenter</a>
+        <a (click)="courseName='comp-prog'" class="list-group-item list-group-item-action list-group-item-primary" [class.active]="courseName === 'comp-prog'">Computer Programmer</a>
+        <a (click)="courseName='Refrigeration'" class="list-group-item list-group-item-action list-group-item-primary" [class.active]="courseName === 'Refrigeration'">Refrigeration</a>
+        <a (click)="courseName='AirCond'" class="list-group-item list-group-item-action list-group-item-primary" [class.active]="courseName === 'AirCond'">Air conditioner mechanic</a>
       </div>
     </div>
-    <div class="movetext">
-      <p>Last date of submmitting examination forms is 31st March 2023. Any application after specified date won't be
-        considred!</p>
+    <div class="course-container">      
+      <div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          Please select a course
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button (click)="courseName='Electric'" class="dropdown-item" type="button">Electrician</button></li>
+          <li><button (click)="courseName='Carpenter'" class="dropdown-item" type="button">Carpenter</button></li>
+          <li><button (click)="courseName='comp-prog'" class="dropdown-item" type="button">Comp-prog</button></li>
+          <li><button (click)="courseName='Refrigeration'" class="dropdown-item" type="button">Refrigeration</button></li>
+          <li><button (click)="courseName='AirCond'" class="dropdown-item" type="button">Air Conditioning</button></li>
+        </ul>
+      </div>
     </div>
     <div>
-      <!-- <a class="btn btn-secondary" routerLink="/contact">Get in touch</a> -->
-      <!-- <button class="btn btn-secondary">Get in touch</button> -->
-    </div>
-
-    <div class="get-in-touch">
-      <div>
-        <!-- <a class="btn btn-secondary" routerLink="/contact">Get in touch</a> -->
-        <!-- <button class="btn btn-secondary">Get in touch</button> -->
-      </div>
+      <app-carpenter *ngIf="courseName=='Carpenter'"></app-carpenter>
+      <app-refrigeration *ngIf="courseName=='Refrigeration'"></app-refrigeration>
+      <app-electric *ngIf="courseName=='Electric'"></app-electric>
+      <app-comp-science *ngIf="courseName=='comp-prog'"></app-comp-science>
+      <app-air-cond *ngIf="courseName=='AirCond'"></app-air-cond>
     </div>
   </div>
+  </div>  
+</div>

@@ -9,11 +9,14 @@ export class CoursesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public courseName: string;
+  public location: string;
 
-  public courseSelected(args: any) {
-    console.log(args);
+  ngOnInit(): void {
+    this.courseName = 'Electric';
+    this.location = '../../assets/images/electric.jpg';
   }
+  
 
 }
+

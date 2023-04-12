@@ -12,6 +12,12 @@ import { NewsComponent } from './news/news.component';
 import { CoursesComponent } from './courses/courses.component';
 import { StaffComponent } from './staff/staff.component';
 import { AdmissionsComponent } from './admissions/admissions.component';
+import { InfoComponent } from './info/info.component';
+import { ElectricComponent } from './electric/electric.component';
+import { CarpenterComponent } from './carpenter/carpenter.component';
+import { CompScienceComponent } from './comp-science/comp-science.component';
+import { RefrigerationComponent } from './refrigeration/refrigeration.component';
+import { AirCondComponent } from './air-cond/air-cond.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { AdmissionsComponent } from './admissions/admissions.component';
     NewsComponent,
     CoursesComponent,
     StaffComponent,
-    AdmissionsComponent    
+    AdmissionsComponent,
+    InfoComponent,
+    ElectricComponent,
+    CarpenterComponent,
+    CompScienceComponent,
+    RefrigerationComponent,
+    AirCondComponent    
   ],
   imports: [
     BrowserModule,
