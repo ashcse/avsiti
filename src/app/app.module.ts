@@ -18,6 +18,8 @@ import { CarpenterComponent } from './carpenter/carpenter.component';
 import { CompScienceComponent } from './comp-science/comp-science.component';
 import { RefrigerationComponent } from './refrigeration/refrigeration.component';
 import { AirCondComponent } from './air-cond/air-cond.component';
+import { PgdcaComponent } from './pgdca/pgdca.component';
+import { ItiComponent } from './iti/iti.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { AirCondComponent } from './air-cond/air-cond.component';
     CarpenterComponent,
     CompScienceComponent,
     RefrigerationComponent,
-    AirCondComponent    
+    AirCondComponent,
+    PgdcaComponent,
+    ItiComponent    
   ],
   imports: [
     BrowserModule,

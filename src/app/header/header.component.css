@@ -24,6 +24,10 @@ a {
 .navitems-container { 
 }
 
+.dropdown-menu {
+    background-color: #ac8e74;
+}
+
 .navbar{
     text-transform: uppercase;
     font-size: 14px;
@@ -48,3 +52,11 @@ background-color: rgb(35, 41, 48) !important; */
     /* color:rgb(191, 207, 217)!important; */
     color:white!important;    
 }
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: rgb(209, 130, 27) !important;
+      }
+  
+  .active-class {
+    color: rgb(209, 130, 27) !important;
+  }
